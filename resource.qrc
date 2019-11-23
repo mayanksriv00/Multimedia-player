@@ -1,0 +1,30 @@
+<RCC>
+    <qresource prefix="/new/icon_images">
+        <file>icons/icons8-audio-100.png</file>
+        <file>icons/icons8-block-microphone-100.png</file>
+        <file>icons/icons8-eject-100.png</file>
+        <file>icons/icons8-end-100.png</file>
+        <file>icons/icons8-fast-forward-100.png</file>
+        <file>icons/icons8-foreign-language-sound-100.png</file>
+        <file>icons/icons8-low-volume-100.png</file>
+        <file>icons/icons8-mute-100.png</file>
+        <file>icons/icons8-no-audio-100.png</file>
+        <file>icons/icons8-pause-100.png</file>
+        <file>icons/icons8-play-100.png</file>
+        <file>icons/icons8-play-record-100.png</file>
+        <file>icons/icons8-record-100.png</file>
+        <file>icons/icons8-repeat-100.png</file>
+        <file>icons/icons8-repeat-one-100.png</file>
+        <file>icons/icons8-resume-button-100.png</file>
+        <file>icons/icons8-rewind-100.png</file>
+        <file>icons/icons8-shuffle-100.png</file>
+        <file>icons/icons8-skip-to-start-100.png</file>
+        <file>icons/icons8-stop-100.png</file>
+        <file>icons/icons8-voice-100.png</file>
+        <file>icons/icons8-about-100.png</file>
+        <file>icons/icons8-exit-100.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>icons/icons8-about-100.png</file>
+    </qresource>
+</RCC>

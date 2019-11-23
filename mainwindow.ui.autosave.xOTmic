@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>510</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>621</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout"/>
+   </widget>
+   <widget class="QSlider" name="horizontalSlider1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>380</y>
+      <width>621</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>10</y>
+      <width>16</width>
+      <height>411</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>900</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>Media</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuVIdeo">
+    <property name="title">
+     <string>Video</string>
+    </property>
+    <addaction name="actionPlay"/>
+    <addaction name="actionPause"/>
+    <addaction name="actionStop"/>
+    <addaction name="actionNext"/>
+   </widget>
+   <widget class="QMenu" name="menuVolume">
+    <property name="title">
+     <string>Volume</string>
+    </property>
+    <addaction name="actionIncrease_Volume"/>
+    <addaction name="actionDecrease_volume"/>
+    <addaction name="actionStop"/>
+    <addaction name="actionMute"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuVIdeo"/>
+   <addaction name="menuVolume"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>BottomToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionPlay"/>
+   <addaction name="separator"/>
+   <addaction name="actionPause"/>
+   <addaction name="separator"/>
+   <addaction name="actionStop"/>
+   <addaction name="separator"/>
+   <addaction name="actionNext"/>
+   <addaction name="separator"/>
+   <addaction name="actionDecrease_volume"/>
+   <addaction name="separator"/>
+   <addaction name="actionIncrease_Volume"/>
+   <addaction name="separator"/>
+   <addaction name="actionMute"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/icon_images/icons/icons8-audio-100.png</normaloff>:/new/icon_images/icons/icons8-audio-100.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionPlay">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/icon_images/icons/icons8-play-100.png</normaloff>:/new/icon_images/icons/icons8-play-100.png</iconset>
+   </property>
+   <property name="text">
+    <string>Play</string>
+   </property>
+  </action>
+  <action name="actionPause">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/icon_images/icons/icons8-pause-100.png</normaloff>:/new/icon_images/icons/icons8-pause-100.png</iconset>
+   </property>
+   <property name="text">
+    <string>Pause</string>
+   </property>
+  </action>
+  <action name="actionStop">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/icon_images/icons/icons8-stop-100.png</normaloff>:/new/icon_images/icons/icons8-stop-100.png</iconset>
+   </property>
+   <property name="text">
+    <string>Stop</string>
+   </property>
+  </action>
+  <action name="actionMute">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/icon_images/icons/icons8-no-audio-100.png</normaloff>:/new/icon_images/icons/icons8-no-audio-100.png</iconset>
+   </property>
+   <property name="text">
+    <string>Mute</string>
+   </property>
+  </action>
+  <action name="actionIncrease_Volume">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/icon_images/icons/icons8-voice-100.png</normaloff>:/new/icon_images/icons/icons8-voice-100.png</iconset>
+   </property>
+   <property name="text">
+    <string>Increase volume</string>
+   </property>
+  </action>
+  <action name="actionDecrease_volume">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/icon_images/icons/icons8-low-volume-100.png</normaloff>:/new/icon_images/icons/icons8-low-volume-100.png</iconset>
+   </property>
+   <property name="text">
+    <string>Decrease volume</string>
+   </property>
+  </action>
+  <action name="actionNext">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/new/icon_images/icons/icons8-end-100.png</normaloff>:/new/icon_images/icons/icons8-end-100.png</iconset>
+   </property>
+   <property name="text">
+    <string>Next</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
